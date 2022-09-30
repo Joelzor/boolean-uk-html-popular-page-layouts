@@ -8,10 +8,10 @@
   height: 100vh;
   display: grid;
   grid-template:
-    "b a a" 0.5fr
-    "b c d" 3fr
-    "b c f" 0.5fr /
-    0.2fr 1fr 5fr;
+    "b a a" 80px
+    "b c d" 1fr
+    "b c f" 100px /
+    100px 200px 1fr;
   gap: 10px;
 }
 
