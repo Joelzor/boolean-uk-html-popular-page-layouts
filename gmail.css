@@ -8,45 +8,46 @@
   height: 100vh;
   display: grid;
   grid-template:
-    "a a a a" 1fr
-    "b c d e" 3fr
-    "f c d e" 0.8fr
-    "g c d e" 1.2fr /
-    1fr 3fr 1fr 0.3fr;
+    "header header header header" 100px
+    "nav mail settings sidebar" 1fr /
+    200px 1fr 0.2fr 80px;
   gap: 10px;
 }
 
-.a {
-  grid-area: a;
+.header {
+  grid-area: header;
   background-color: orange;
 }
 
-.b {
+.nav {
   background-color: pink;
-  grid-area: b;
+  grid-area: nav;
 }
 
-.c {
-  grid-area: c;
+.mail {
+  grid-area: mail;
   background-color: blue;
 }
 
-.d {
-  grid-area: d;
+.settings {
+  grid-area: settings;
   background-color: yellow;
 }
 
-.e {
-  grid-area: e;
+.sidebar {
+  grid-area: sidebar;
   background-color: brown;
 }
 
-.f {
-  grid-area: f;
-  background-color: green;
-}
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template:
+      "header header header" 100px
+      "nav mail settings" 1fr /
+      200px 1fr 0.2fr;
+  }
 
-.g {
-  grid-area: g;
-  background-color: black;
+  .sidebar {
+    display: none;
+  }
 }

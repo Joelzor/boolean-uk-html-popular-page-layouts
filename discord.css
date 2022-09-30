@@ -8,44 +8,34 @@
   height: 100vh;
   display: grid;
   grid-template:
-    "b a a" 80px
-    "b c d" 1fr
-    "b c f" 100px /
+    "sidebar header header" 80px
+    "sidebar server main" 1fr
+    "sidebar server input" 60px /
     100px 200px 1fr;
   gap: 10px;
 }
 
-.a {
-  grid-area: a;
+.header {
+  grid-area: header;
   background-color: orange;
 }
 
-.b {
+.sidebar {
   background-color: pink;
-  grid-area: b;
+  grid-area: sidebar;
 }
 
-.c {
-  grid-area: c;
+.server {
+  grid-area: server;
   background-color: blue;
 }
 
-.d {
-  grid-area: d;
+.main {
+  grid-area: main;
   background-color: yellow;
 }
 
-.e {
-  grid-area: e;
+.input {
+  grid-area: input;
   background-color: brown;
-}
-
-.f {
-  grid-area: f;
-  background-color: green;
-}
-
-.g {
-  grid-area: g;
-  background-color: black;
 }
