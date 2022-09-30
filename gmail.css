@@ -8,17 +8,9 @@
   height: 100vh;
   display: grid;
   grid-template:
-<<<<<<< HEAD
     "header header header header" 100px
     "nav mail settings sidebar" 1fr /
     200px 1fr 0.2fr 80px;
-=======
-    "a a a a" 1fr
-    "b c d e" 3fr
-    "b c d e" 0.8fr
-    "b c d e" 1.2fr /
-    200px 3fr 1fr 0.3fr;
->>>>>>> 6b5a7a87e003d2ff209566eb89c9e9badfeed00b
   gap: 10px;
 }
 
@@ -55,24 +47,7 @@
       200px 1fr 0.2fr;
   }
 
-<<<<<<< HEAD
   .sidebar {
     display: none;
   }
-=======
-
-@media screen and (max-width: 600px) {
-    .container{
-        grid-template:
-        "a a a a " 1fr
-        "b c d e " 3fr
-        "b c d e " 0.8fr
-        "b c d e " 1.2fr /
-        200px 3fr 1fr 0.5fr;
-    }
-
-    .e{
-      display: none;
-    }
->>>>>>> 6b5a7a87e003d2ff209566eb89c9e9badfeed00b
 }
